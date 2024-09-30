@@ -1,9 +1,9 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categorias - SST Store</title>
+    <title>Roupas - SST Store</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -34,25 +34,27 @@
         .container {
             padding: 20px;
         }
-        .categories {
+        .category {
+            margin: 2rem 0;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 2rem 0;
+        }
+        .product {
             background-color: white;
-            padding: 15px;
-            margin: 20px 0;
+            border: 1px solid #ccc;
             border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+            width: 200px;
         }
-        .categories ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .categories li {
-            margin: 5px 0;
-        }
-        .categories a {
-            text-decoration: none;
-            color: #03b8ff;
-        }
-        .categories a:hover {
-            text-decoration: underline;
+        .product img {
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -62,20 +64,21 @@
     </header>
     <nav>
         <a href="index.html">Página Inicial</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="#">Categorias</a>
+        <a href="acessorio.html">Acessórios</a>
+        <a href="roupas.html">Roupas</a>
+        <a href="calsados.html">Calçados</a>
+        <a href="equipamentos.html">Equipamentos</a>
         <a href="sobre.html">Sobre</a>
         <a href="login.html">Login</a>
     </nav>
     <div class="container">
-        <h2>Categorias de Produtos</h2>
-        <div class="categories">
-            <ul>
-                <li><a href="equipamentos.html"><h3>Equipamentos</h3></a></li>
-                <li><a href="roupas.html"><h3>Roupas</h3></a></li>
-                <li><a href="calsados.html"><h3>Calçados</h3></a></li>
-                <li><a href="acessorio.html"><h3>Acessórios</h3></a></li>
-            </ul>
+        <h2>Roupas</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="img/calcajeans.jpg" alt="Calça">
+                <a href="produto2.html"><h3>Calça</h3></a>
+                <p>R$ 199,99</p>
+            </div>
         </div>
     </div>
 </body>
